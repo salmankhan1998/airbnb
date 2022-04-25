@@ -1,0 +1,52 @@
+
+@mixin main-heading{
+    font-size: $extra-large-medium-font;
+    color: $light-black;
+    line-height: 36px;
+}
+
+// --- For h1----
+@mixin large-heading {
+    font-size: $large-medium-font;
+    font-weight: 600;
+    line-height: 55px;
+    color: $white-color;
+}
+
+// ---- For h3 ----
+@mixin medium-heading {
+    font-size: $medium-font;
+    font-weight: 600;
+    line-height: 36px;
+    color: $light-black;
+}
+
+// ---- For h4 ----
+@mixin small-heading {
+    font-size: $normal-small;
+    line-height: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+@mixin large-para {
+    font-size: $normal-small;
+    line-height: 25px;
+    font-weight: 400;
+}
+
+@mixin medium-para {
+    font-size: $small-font;
+    line-height: 25px;
+    font-weight: 400;
+    color: $light-black;
+}
+
+@mixin flexible-head {
+    border: 1px solid transparent;
+    font-size: $normal-medium-font;
+    font-weight: 600;
+    background-image: linear-gradient(to right, #6F019C 0%, #e61e4d 90%, #C6017E 135.12%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}

@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb: Vacations Rental, Cabins, Beach Houses, Unique Houses & ...</title>
+    <script src="https://kit.fontawesome.com/7fcbee5da3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <section class="banner">
+
+        <div id="search-place">
+            <h4>go anywhere, anytime</h4>
+
+            <div class="search-bar">
+                <h4>i'm flexible </h4>
+                <span><i class="fas fa-angle-right"></i></span>
+            </div>    
+        </div>
+
+        <div class="container">
+
+            <div class="logo">
+                <i class="fab fa-airbnb"></i>
+                <a>airbnb</a>
+            </div>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Place to stay</a>
+                    </li>
+                    <li>
+                        <a href="#">Experinces</a>
+                    </li>
+                    <li>
+                        <a href="./pages/online_experience.html">Online Experince</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="sign-up-btn">
+                <div class="host">
+                    <a href="./pages/host.html">Become a host</a>
+                    <a href="#"><i class="fas fa-globe"></i></a>
+                </div>
+
+                <div class="sign-up-sec">
+                    <div>
+                        <a href="#" class="bars"><i class="fa fa-bars"></i></a>
+                        <a href="#" class="profile-pic"><i class="fas fa-user-circle"></i></a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-panel">
+            <div class="panel" onclick="mySearchBarFunction()">
+                <h4>location</h4>
+                <p>Where are you going?</p>
+            </div>
+            <div class="division"></div>
+
+            <div class="panel">
+                <h4>check in</h4>
+                <p>Add dates</p>
+            </div>
+            <div class="division"></div>
+
+            <div class="panel">
+                <h4>check out</h4>
+                <p>Add dates</p>
+            </div>
+            <div class="division"></div>
+
+            <div class="panel wrapper">
+                <div>
+                    <h4>guest</h4>
+                    <p>Add guests</p>
+                </div>
+
+                <div class="search-btn"><i class="fa fa-search"></i></div>
+            </div>
+
+            
+        </div>
+        <div class="banner-content">
+            <h3>Not sure where to go? Perfect</h3>
+
+            <a href="./pages/flexible-places.html"><button>i'm flexible</button></a>
+        </div>
+    </section>
+
+    <section class="explore-sec">
+
+        <h1>Explore nearby</h1>
+
+        <div class="exp-grid">
+
+            <a href="./pages/lahore_stay.html" class="exp-item">
+                <div class="item-img">
+                    <img src="./images/explore/img1.webp" alt="">
+                </div>
+                <div class="item-info">
+                    <h4>lahore</h4>
+                    <p>4.5 hours drive</p>
+                </div>
+            </a>
+
+            <a href="./pages/rawalpindi_stay.html" class="exp-item">
+                <div class="item-img">
+                    <img src="./images/explore/img2.webp" alt="">
+                </div>
+                <div class="item-info">
+                    <h4>rawalpindi</h4>
+                    <p>15 minutes drive</p>
+                </div>
+            </a>
+
+            <a href="./pages/murree_stay.html" class="exp-item">
+                <div class="item-img">
+                    <img src="./images/explore/img3.jpg" alt="">
+                </div>
+                <div class="item-info">
+                    <h4>murree</h4>
+                    <p>1 hours drive</p>
+                </div>
+            </a>
+
+            <a href="./pages/nathia_gali_stay.html" class="exp-item">
+                <div class="item-img">
+                    <img src="./images/explore/img4.jpg" alt="">
+                </div>
+                <div class="item-info">
+                    <h4>nathia gali</h4>
+                    <p>1.5 hours drive</p>
+                </div>
+            </a>
+
+            <a href="./pages/bhurban_stay.html" class="exp-item">
+                <div class="item-img">
+                    <img src="./images/explore/img5.webp" alt="">
+                </div>
+                <div class="item-info">
+                    <h4>bhurban</h4>
+                    <p>1.5 hours drive</p>
+                </div>
+            </a>
+
+            <a href="./pages/multan_stay.html" class="exp-item">
+                <div class="item-img">
+                    <img src="./images/explore/img6.webp" alt="">
+                </div>
+                <div class="item-info">
+                    <h4>multan</h4>
+                    <p>6 hours drive</p>
+                </div>
+            </a>
+
+            <a href="./pages/faislabad_stay.html" class="exp-item">
+                <div class="item-img">
+                    <img src="./images/explore/img7.webp" alt="">
+                </div>
+                <div class="item-info">
+                    <h4>faislabad</h4>
+                    <p>5 hours drive</p>
+                </div>
+            </a>
+
+            <a href="./pages/peshawar_stay.html" class="exp-item">
+                <div class="item-img">
+                    <img src="./images/explore/img8.webp" alt="">
+                </div>
+                <div class="item-info">
+                    <h4>peshwar</h4>
+                    <p>4.5 hours drive</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="live-sec">
+
+        <h1>Live anywhere</h1>
+
+        <div class="live-grid">
+
+            <a href="./pages/outdoor_gateways.html" class="live-items">
+                <div class="items-img">
+                    <img src="./images/live/img1.webp" alt="Live anywhere Image 1">
+                </div>
+
+                <div class="items-info">
+                    <h4>outdoor gateways</h4>
+                </div>
+            </a>
+
+            <a href="./pages/unique_stay.html" class="live-items">
+                <div class="items-img">
+                    <img src="./images/live/img2.webp" alt="Live anywhere Image 2">
+                </div>
+
+                <div class="items-info">
+                    <h4>unique stays</h4>
+                </div>
+            </a>
+
+            <a href="./pages/entire_home.html" class="live-items">
+                <div class="items-img">
+                    <img src="./images/live/img3.webp" alt="Live anywhere Image 3">
+                </div>
+
+                <div class="items-info">
+                    <h4>entire home</h4>
+                </div>
+            </a>
+        </div>
+
+        <a href="./pages/host.html" class="hosting">
+            <div class="host-grid">
+                
+                <div class="host-info">
+                    <h1>Try hosting</h1>
+                    <p>Earn extra income and unlock new<br>
+                        opportunities by sharing your work space</p>
+
+                    <button>Learn More</button>
+                </div>
+
+                <div class="host-img">
+                    <img src="./images/live/host-img.jpg" alt="Host image">
+                </div>
+            </div>
+        </a>
+    </section>
+
+    <section class="discover">
+
+        <h1>Discover things to do</h1>
+
+        <div class="discover-grid">
+
+            <a href="./pages/experiences.html" class="disc-items">
+                <div class="disc-items-img">
+                    <img src="./images/discover/img1.webp" alt="Discover Image 1">
+                </div>
+
+                <div class="disc-items-info">
+                    <h4>experiences</h4>
+                    <p>Find unforgettable activities around you</p>
+                </div>
+            </a>
+
+            <a href="./pages/online_experience.html" class="disc-items">
+                <div class="disc-items-img">
+                    <img src="./images/discover/img2.webp" alt="Discover Image 2">
+                </div>
+
+                <div class="disc-items-info">
+                    <h4>online experiences</h4>
+                    <p>Live, interactive activities led by Hosts</p>
+                </div>
+            </a>
+
+            <a href="#" class="disc-items">
+                <div class="disc-items-img">
+                    <img src="./images/discover/img3.webp" alt="Discover Image 3">
+                </div>
+
+                <div class="disc-items-info">
+                    <h4>features collection: wanderlust</h4>
+                    <p>Travel from home with Online Experinces</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="inspiration">
+
+        <h2>Inspiration for future getaways</h2>
+
+        <ul>
+            <li>Dextination for arts and culture</li>
+            <li>Dextination for outdoor adventure</li>
+            <li>Mountains cabins</li>
+            <li>Beach Destination</li>
+            <li>Popular Destination</li>
+            <li>Unique Stays</li>
+        </ul>
+
+        <div class="inspiration-grid">
+
+            <a href="#">
+                <h4>Phoenix</h4>
+                <p>Arizona</p>
+            </a>
+            <a href="#">
+                <h4>Hot sprimgs</h4>
+                <p>Arkansas</p>
+            </a>
+            <a href="#">
+                <h4>los angeles</h4>
+                <p>california</p>
+            </a>
+            <a href="#">
+                <h4>san francisco</h4>
+                <p>california</p>
+            </a>
+            <a href="#">
+                <h4>barcelona</h4>
+                <p>catalonia</p>
+            </a>
+            <a href="#">
+                <h4>prague</h4>
+                <p>czechia</p>
+            </a>
+            <a href="#">
+                <h4>washington</h4>
+                <p>Dostrict of columbia</p>
+            </a>
+            <a href="#">
+                <h4>keswick</h4>
+                <p>england</p>
+            </a>
+            <a href="#">
+                <h4>london</h4>
+                <p>england</p>
+            </a>
+            <a href="#">
+                <h4>york</h4>
+                <p>emgland</p>
+            </a>
+            <a href="#">
+                <h4>paris</h4>
+                <p>france</p>
+            </a>
+            <a href="#">
+                <h4>rhodes</h4>
+                <p>greece</p>
+            </a>
+            <a href="#">
+                <h4>dublin</h4>
+                <p>ireland</p>
+            </a>
+            <a href="#">
+                <h4>florence</h4>
+                <p>italy</p>
+            </a>
+            <a href="#">
+                <h4>rome</h4>
+                <p>italy</p>
+            </a>
+            <a href="#">
+                <h4>lisbon</h4>
+                <p>lisbon</p>
+            </a>
+            <a href="#">
+                <h4>new orleans</h4>
+                <p>louisiana</p>
+            </a>
+            <a href="#">
+                <h4>marthas vineyard</h4>
+                <p>massachusetts</p>
+            </a>
+            <a href="#">
+                <h4>south heaven</h4>
+                <p>michigan</p>
+            </a>
+            <a href="#">
+                <h4>scanborough</h4>
+                <p>england</p>
+            </a>
+        </div>
+    </section>
+
+    <section class="contact">
+
+        <div class="contact-grid">
+
+            <div class="contact-items">
+                <h4>about</h4>
+
+                <ul>
+                    <li>
+                        <a href="#">how aribnb works</a>
+                    </li>
+                    <li>
+                        <a href="#">newsroom</a>
+                    </li>
+                    <li>
+                        <a href="#">airbnb 2021</a>
+                    </li>   
+                    <li>
+                        <a href="#">investor</a>
+                    </li> 
+                    <li>
+                        <a href="#">airbnb plus</a>
+                    </li>  
+                    <li>
+                        <a href="#">airbnb luxe</a>
+                    </li>
+                    <li>
+                        <a href="#">hotel tonight</a>
+                    </li> 
+                    <li>
+                        <a href="#">airbnb for work</a>
+                    </li>   
+                    <li>
+                        <a href="#">made possible by hosts</a>
+                    </li>
+                    <li>
+                        <a href="#">careers</a>
+                    </li>
+                    <li>
+                        <a href="#">founder's letter</a>
+                    </li>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contact-items">
+                <h4>community</h4>
+
+                <ul>
+                    <li>
+                        <a href="#">diversity & belongings</a>
+                    </li>
+                    <li>
+                        <a href="#">against discrimination</a>
+                    </li>
+                    <li>
+                        <a href="#">accessibility</a>
+                    </li>   
+                    <li>
+                        <a href="#">airbnb associates</a>
+                    </li> 
+                    <li>
+                        <a href="#">host afghan refugees</a>
+                    </li>  
+                    <li>
+                        <a href="#">guest referrals</a>
+                    </li>
+                    <li>
+                        <a href="#">gift cards</a>
+                    </li> 
+                    <li>
+                        <a href="#">airbnb.org</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contact-items">
+                <h4>host</h4>
+
+                <ul>
+                    <li>
+                        <a href="#">host your home</a>
+                    </li>
+                    <li>
+                        <a href="#">host an online experince</a>
+                    </li>
+                    <li>
+                        <a href="#">host an experince</a>
+                    </li>   
+                    <li>
+                        <a href="#">responsible hosting</a>
+                    </li> 
+                    <li>
+                        <a href="#">resource center</a>
+                    </li>  
+                    <li>
+                        <a href="#">community center</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contact-items">
+                <h4>support</h4>
+
+                <ul>
+                    <li>
+                        <a href="#">our covid-19 response</a>
+                    </li>
+                    <li>
+                        <a href="#">help center</a>
+                    </li>
+                    <li>
+                        <a href="#">cancellation options</a>
+                    </li>   
+                    <li>
+                        <a href="#">neighbours support</a>
+                    </li> 
+                    <li>
+                        <a href="#">trust & safety</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer">
+
+            <div class="foot-box">
+
+                <div class="foot-info">
+                    <p>&copy 2021 Airbnd, Inc. </p>
+
+                    <ul>
+                        <li><a href="#">privacy</a></li>
+                        <li><a href="#">terms</a></li>
+                        <li><a href="#">sitemap</a></li>
+                    </ul>
+                </div>
+
+                <div class="foot-links">
+
+                    <div>
+                        <a href="#"><i class="fas fa-globe"></i></a>
+                        <a href="#">English</a>
+                    </div>
+
+                    <div>
+                        <a href="#"><i class="fas fa-dollar-sign"></i></a>
+                        <a href="#">USD</a>
+                    </div>
+
+                    <div class="social-links">
+                        <ul>
+                            <li><a href="https://en-gb.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script src="./js/main.js"></script>
+</html>

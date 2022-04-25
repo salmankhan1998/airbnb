@@ -1,0 +1,303 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #000;
+  background-color: #fff;
+}
+
+button {
+  padding: 15px 20px;
+  font-size: 17px;
+  text-transform: capitalize;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  background-image: linear-gradient(to right, #e61e4d 0%, #C6017E 135.12%);
+}
+button:hover {
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  padding: 0 80px;
+  height: 80px;
+  color: #fff;
+}
+.container .logo {
+  display: flex;
+  align-items: center;
+  width: 350px;
+}
+.container .logo i {
+  font-size: 35px;
+}
+.container .logo a {
+  font-size: 22px;
+  font-weight: 600;
+}
+.container nav ul {
+  list-style: none;
+}
+.container nav ul li {
+  display: inline-block;
+  padding: 0 18px;
+}
+.container nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+.container nav ul li:hover {
+  opacity: 0.8;
+}
+.container nav ul li::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 2px;
+  margin: 3px auto 0;
+  background-color: #ddd;
+}
+.container .sign-up-btn {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+.container .sign-up-btn .host {
+  margin-right: 10px;
+}
+.container .sign-up-btn .host a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  margin-right: 5px;
+}
+.container .sign-up-btn .host i {
+  font-size: 16px;
+  padding: 10px;
+}
+.container .sign-up-btn .sign-up-sec {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 40px;
+  width: 70px;
+  height: 37px;
+  color: #484848;
+}
+.container .sign-up-btn .sign-up-sec div {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  padding: 4px 0 0 12px;
+}
+.container .sign-up-btn .sign-up-sec div .bars {
+  color: #222222;
+}
+.container .sign-up-btn .sign-up-sec div .bars i {
+  font-size: 16px;
+}
+.container .sign-up-btn .sign-up-sec div .profile-pic {
+  color: #222222;
+}
+.container .sign-up-btn .sign-up-sec div .profile-pic i {
+  font-size: 28px;
+  margin-left: 8px;
+}
+
+.contact {
+  width: 100%;
+  height: auto;
+  padding: 0 80px;
+  background-color: #f7f7f7;
+}
+.contact .contact-grid {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  padding: 45px 0;
+  border-bottom: 1px solid #ddd;
+}
+.contact .contact-grid .contact-items {
+  padding: 0 12px;
+}
+.contact .contact-grid .contact-items h4 {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.contact .contact-grid .contact-items ul {
+  list-style: none;
+  margin-top: 15px;
+}
+.contact .contact-grid .contact-items ul li {
+  padding: 10px 0;
+}
+.contact .contact-grid .contact-items ul li a {
+  display: block;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #222222;
+  font-size: 14px;
+}
+.contact .contact-grid .contact-items ul li a:hover {
+  text-decoration: underline;
+}
+.contact .footer {
+  width: 100%;
+  height: auto;
+  padding: 25px 0;
+}
+.contact .footer .foot-box {
+  display: flex;
+  flex: 1;
+}
+.contact .footer .foot-box .foot-info {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+.contact .footer .foot-box .foot-info ul {
+  margin-left: 10px;
+}
+.contact .footer .foot-box .foot-info ul li {
+  display: inline-block;
+  margin-right: 5px;
+}
+.contact .footer .foot-box .foot-info ul li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #222222;
+}
+.contact .footer .foot-box .foot-info ul li a:hover {
+  text-decoration: underline;
+}
+.contact .footer .foot-box .foot-links {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-end;
+}
+.contact .footer .foot-box .foot-links div {
+  margin-left: 30px;
+}
+.contact .footer .foot-box .foot-links div a {
+  text-decoration: underline;
+  color: #222222;
+  padding: 0 5px;
+}
+.contact .footer .foot-box .foot-links .social-links ul {
+  list-style: none;
+}
+.contact .footer .foot-box .foot-links .social-links ul li {
+  display: inline-block;
+  padding: 0 5px;
+}
+.contact .footer .foot-box .foot-links .social-links ul li a {
+  text-decoration: none;
+  color: #222222;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 1230px) {
+  .contact {
+    padding: 0 65px;
+  }
+}
+@media screen and (max-width: 1078px) {
+  .contact {
+    padding: 0 55px;
+  }
+}
+@media screen and (max-width: 942px) {
+  .contact .footer .foot-box .foot-links div a {
+    padding: 0 2px;
+  }
+  .contact .footer .foot-box .foot-links .social-links ul li {
+    padding: 0 2px;
+  }
+}
+@media screen and (max-width: 846px) {
+  .contact .contact-grid {
+    grid-template-columns: 100%;
+    grid-row-gap: 20px;
+    border-bottom: none;
+    padding: 45px 0 10px;
+  }
+  .contact .contact-grid .contact-items {
+    padding: 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  .contact .contact-grid .contact-items ul {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin: 10px 0;
+  }
+  .contact .contact-grid .contact-items ul li {
+    padding: 5px 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact .footer .foot-box {
+    align-items: center;
+    flex-direction: column;
+  }
+  .contact .footer .foot-box .foot-links div {
+    margin: 5px 8px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .contact {
+    padding: 0 45px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .contact {
+    padding: 0 30px;
+  }
+  .contact .contact-grid .contact-items ul {
+    grid-template-columns: 50% 50%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .contact .contact-grid .contact-items ul {
+    grid-template-columns: 100%;
+  }
+  .contact .contact-grid .contact-items ul li {
+    margin-left: 2px;
+  }
+  .contact .contact-grid .contact-items ul li a {
+    font-size: 13px;
+  }
+  .contact .footer .foot-box .foot-info {
+    flex-direction: column;
+  }
+  .contact .footer .foot-box .foot-info p {
+    font-size: 13px;
+  }
+  .contact .footer .foot-box .foot-info ul {
+    margin-left: 8px;
+  }
+  .contact .footer .foot-box .foot-info ul li a {
+    font-size: 13px;
+  }
+  .contact .footer .foot-box .foot-links div {
+    margin: 4px 6px;
+  }
+  .contact .footer .foot-box .foot-links div a {
+    font-size: 13px;
+  }
+  .contact .footer .foot-box .foot-links .social-links ul li a {
+    font-size: 16px;
+  }
+}
+
+/*# sourceMappingURL=global.css.map */

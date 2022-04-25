@@ -1,0 +1,947 @@
+@import "global";
+@import "variables";
+@import "mixin";
+
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+
+    .banner-grid{
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+        .grid-left{
+            background-color: $black-color;
+            color: $white-color;
+            padding: 50px;
+            height: 100vh;
+
+            a{
+                text-decoration: none;
+                color: $white-color;
+                font-size: $large-small-font;
+                padding: 5px 10px;
+                
+                &:hover{
+                    background-color: $medium-grey;
+                    border: none;
+                    border-radius: 50%;
+                }
+            }
+
+            .grid-item{
+                text-align: center;
+                text-transform: capitalize;
+
+                h1{
+                    font-size: $extra-large-font;
+                    font-weight: 500;
+                    line-height: 70px;
+                    margin: 50px 0;
+                }
+
+                .icon{
+                    font-size: $medium-font;
+                    font-weight: 500;
+                    margin-top: 60px;
+                }
+            }
+        }
+
+        .grid-right{
+            height: 100vh;
+            video{
+                position: relative;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    header{
+        display: none;
+        flex: 1;
+        justify-content: space-between;
+        top: 120vh;
+        position: sticky;
+        padding: 15px 40px;
+        
+        a{
+            text-decoration: none;
+            color: $black-color;
+            font-size: $large-small-font;
+            padding: 5px 10px;
+            
+            &:hover{
+                background-color: $medium-grey;
+                border: none;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+.hosting-main{
+    width: 100%;
+    height: auto;
+    color: $black-color;
+
+    .hosting-head{
+        padding: 90px 50px;
+        text-align: left;
+
+        h1{
+            font-size: $large-font;
+            font-weight: 500;
+            line-height: 70px;
+            text-transform: capitalize;
+            font-weight: 600;
+        }
+    }
+
+    
+    .hosting-body{
+        padding: 80px 50px 50px;
+        color: $medium-grey;
+        background-color: $black-color;
+
+        .hosting-bd-box{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            grid-auto-flow: column;
+            grid-column-gap: 35px;
+            scroll-snap-type: x mandatory;
+            overflow-x: auto;
+            scroll-padding-left: 50px;
+
+            &::-webkit-scrollbar{
+                display: none;
+            }
+            
+
+            .host-bd-items{
+                margin-top: 0;
+                width: 340px;
+                height: 650px;
+                scroll-snap-align: start;
+                scroll-behavior: smooth;
+
+                .items-img{
+                    height: 300px;
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        border: none;
+                        border-radius: 10px;
+                        object-fit: cover;
+                    }
+                }
+
+                h2{
+                    font-size: $medium-large-font;
+                    font-weight: 500;
+                    line-height: 35px;
+                    margin: 30px 0;
+                }
+
+                .img-sign{
+                    img{
+                        width: 75px;
+                        height: 42px;
+                    }
+                }
+
+                .host-location{
+                    font-size: $normal-small;
+                    font-weight: 500;
+                    margin: 20px 0;
+                }
+            }
+
+            
+
+            // #slider{
+            //     position: relative;
+            //     overflow: hidden;
+            //     margin: 0 auto;
+            //     border-radius: 4px;
+            //     height: auto;
+
+            //     ul {
+            //         position: relative;
+            //         margin: 0;
+            //         padding: 0;
+            //         width: 100%;
+            //         height: 700px;
+            //         list-style: none;
+
+            //         li {
+            //             position: relative;
+            //             display: block;
+            //             float: left;
+            //             margin: 0;
+            //             padding: 0;
+            //             width: 500px;
+            //             height: 700px;
+
+            //             img{
+            //                 width: 100%;
+            //                 height: 300px;
+            //                 object-fit: cover;
+            //             }
+            //             h2{
+            //                 font-size: 26px;
+            //                 color: $white-color;
+            //                 margin: 30px 0;
+            //             }
+            //           }
+            //     }
+
+            //     span.control_prev, span.control_next {
+            //         position: absolute;
+            //         top: 40%;
+            //         z-index: 999;
+            //         display: block;
+            //         padding: 4% 3%;
+            //         width: auto;
+            //         height: auto;
+            //         background: #2a2a2a;
+            //         color: #fff;
+            //         text-decoration: none;
+            //         font-weight: 600;
+            //         font-size: 18px;
+            //         opacity: 0.8;
+            //         cursor: pointer;
+            //       }
+                
+            //       span.control_prev:hover, span.control_next:hover {
+            //         opacity: 1;
+            //         -webkit-transition: all 0.2s ease;
+            //       }
+                
+            //       span.control_prev {
+            //         border-radius: 0 2px 2px 0;
+            //       }
+                
+            //       span.control_next {
+            //         right: 0;
+            //         border-radius: 2px 0 0 2px;
+            //       }
+            // }
+        }
+
+        
+    }
+
+    .hosting-place-box{
+        padding: 80px 50px 60px;
+        color: $medium-grey;
+        text-align: center;
+        background-color: $black-color;
+
+        div{
+            font-size: $large-font;
+            font-weight: 600;
+            margin-bottom: 40px;
+
+            span{
+                color: $white-color;
+                position: relative;
+
+                    &::after{
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        left: 0;
+                        margin-top: -20px;
+                        width: 100%;
+                        height: 4px;
+                        background-color: $white-color;
+                    }
+            }
+
+            input{
+                display: none;
+            }
+            
+            i{
+                font-size: $medium-sm-font;
+                color: $white-color;
+            }
+
+            
+        }
+
+        div.shower{
+            display: none;
+            position: absolute;
+            left: 0;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+        p{
+            @include large-para;
+            line-height: 40px;
+            color: $white-color;
+            text-decoration: underline;
+            text-align: center;
+        }
+        
+        button{
+            margin-top: 50px;
+            margin-bottom: 15px;        }
+    }
+}
+
+.hosting-art{
+    width: 100%;
+    height: auto;
+    padding: 80px 50px 60px;
+
+    h1{
+        font-size: $large-font;
+        font-weight: 500;
+        line-height: 70px;
+        font-weight: 600;
+        color: $black-color;
+        margin-bottom: 50px;
+    }
+
+    .art-grid{
+        display: grid;
+        grid-template-columns: 24% 23% 23% 23%;
+        grid-column-gap: 2%;
+
+        a.art-gd-items{
+            text-decoration: none;
+            color: $black-color;
+
+            .gd-img{
+                height: 300px;
+                
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border: none;
+                    border-radius: 15px;
+                }
+            }
+
+            h2{
+                font-size: $medium-nm-font;
+                line-height: 30px;
+                margin: 25px 0;
+
+                i{
+                    padding: 0 10px;
+                }
+            }
+        }
+    }
+}
+
+.airbnb-hosting{
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 0;
+    margin: 0;
+
+    .airbnb-host-grid{
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+        .grid-left{
+            height: 600px;
+
+            video{
+                position: relative;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .grid-right{
+            background-color: $black-color;
+            color: $white-color;
+            padding: 50px;
+            height: 600px;
+
+            .grid-item{
+                text-align: center;
+                text-transform: capitalize;
+
+                h1{
+                    font-size: $extra-large-font;
+                    font-weight: 500;
+                    line-height: 70px;
+                    margin: 50px 0;
+                }
+                
+                p{
+                    font-size: $small-medium-font;
+                }
+
+                button{
+                    font-size: $medium-font;
+                    margin-top: 60px;
+                }
+            }
+        }
+    }
+}
+
+
+// <---------- Media Queries -------->
+
+@media screen and (max-width: 1150px) {
+    
+    .banner{
+        .banner-grid{
+            .grid-left{
+                .grid-item{
+                    h1 {
+                        margin: 35px 0;
+                    }
+
+                    .icon {
+                        margin-top: 40px;
+                    }
+                }
+            }
+        }
+    }
+
+    .hosting-art{
+        .art-grid {
+            grid-template-columns: 49% 49%;
+            grid-column-gap: 20px;
+            grid-row-gap: 25px;
+
+            a.art-gd-items{
+                h2 {
+                    margin: 10px 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+
+    .banner{
+        .banner-grid{
+            .grid-left{
+                .grid-item{
+                    h1 {
+                        font-size: $large-font;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 965px) {
+    
+    .banner {
+        height: auto;
+
+        .banner-grid{
+            grid-template-columns: 100%;
+
+            .grid-left{
+                height: auto;
+                order: 2;
+            }
+        }
+    }
+
+    .hosting-main{
+        .hosting-head {
+            padding: 60px 45px;
+
+            h1{
+                font-size: $large-lg-md-font;
+            }
+        }
+
+        .hosting-body {
+            padding: 80px 45px 40px;
+        }
+
+        .hosting-place-box {
+            padding: 80px 45px 60px;
+
+            div{
+                font-size: $large-lg-md-font;
+            }
+
+            button{
+                margin-top: 35px;
+            }
+        }
+    }
+
+    .hosting-art {
+        padding: 80px 45px 60px;
+
+        h1{
+            font-size: $large-lg-md-font;
+        }
+    }
+
+    .airbnb-hosting{
+        .airbnb-host-grid {
+            grid-template-columns: 100%;
+
+            .grid-left{
+                height: 500px;
+            }
+
+            .grid-right{
+                height: 500px;
+
+                .grid-item{
+                    button {
+                        margin-top: 45px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    .hosting-main{
+        .hosting-head{
+            h1 {
+                font-size: $large-medium-font;
+                line-height: 50px;
+            }
+        }
+    }
+
+    .hosting-main{
+        .hosting-place-box{
+            div {
+                font-size: $large-medium-font;
+                span{
+
+                    &::after {
+                        margin-top: -15px;
+                    }
+                }
+            }
+        }
+    }
+
+    .hosting-art{
+        h1 {
+            font-size: $large-medium-font;
+        }
+
+        .art-grid {
+            grid-template-columns: 47% 47%;
+        }
+    }
+}
+
+@media screen and (max-width: 722px) {
+
+    .banner{
+        .banner-grid{
+            .grid-left{
+                .grid-item{
+                    h1 {
+                        font-size: $large-lg-md-font;
+                    }
+
+                    button {
+                        font-size: $normal-small;
+                    }
+                }
+            }
+        }
+    }
+
+    .hosting-main{
+        .hosting-head{
+            h1{
+                font-size: $large-medium-sm-font;
+            }
+        }
+
+        .hosting-place-box{
+            div {
+                font-size: $large-medium-sm-font;
+
+                span{
+
+                    &::after {
+                        margin-top: -10px;
+                    }
+                }
+            }
+
+            button{
+                font-size: $normal-small;
+            }
+        }
+    }
+
+    .hosting-art{
+        h1 {
+            font-size: $large-medium-sm-font;
+            line-height: 50px;
+            margin-bottom: 40px;
+        }
+    }
+
+    .airbnb-hosting{
+        .airbnb-host-grid{
+            .grid-right{
+                .grid-item{
+                    h1 {
+                        font-size: $large-lg-md-font;
+                        margin: 40px 0;
+                    }
+
+                    button{
+                        font-size: $small-medium-font;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 605px) {
+    
+    .banner{
+        .banner-grid{
+            .grid-left{
+                padding: 50px 30px;
+
+                .grid-item{
+                    h1 {
+                        font-size: $large-medium-font;
+                        line-height: 60px;
+                    }
+                }
+            }
+        }
+    }
+
+    .hosting-main{
+
+        .hosting-place-box{
+            div{
+                font-size: $large-small-font;
+            }
+        }
+
+
+        .hosting-body{
+            .hosting-bd-box{
+                .host-bd-items {
+                    width: 290px;
+                    height: 600px;
+
+                    h2 {
+                        font-size: $medium-nm-font;
+                        line-height: 32px;
+                        margin: 16px 0;
+                    }
+                    
+                    .img-sign{
+                        img {
+                            width: 70px;
+                            height: 36px;
+                        }
+                    }
+
+                    .host-location {
+                        margin: 10px 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .hosting-art{
+        .art-grid {
+            grid-template-columns: 100%;
+        }
+    }
+
+    .airbnb-hosting{
+        .airbnb-host-grid{
+            .grid-right{
+                .grid-item{
+                    h1 {
+                        font-size: $large-medium-font;
+                        line-height: 60px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .hosting-main{
+        .hosting-head{
+            padding: 50px 35px;
+
+            h1 {
+                font-size: $large-small-font;
+                line-height: 45px;
+            }
+        }
+
+        .hosting-body {
+            padding: 80px 35px 40px;
+        }
+
+        .hosting-place-box {
+            padding: 80px 35px 60px;
+
+            div{
+                font-size: $extra-large-medium-font;
+            }
+        }
+    }
+
+    .hosting-art{
+        h1 {
+            font-size: $extra-large-medium-font;
+            line-height: 44px;
+        }
+
+        .art-grid{
+            a.art-gd-items{
+                h2 {
+                    font-size: 20px;
+                    line-height: 28px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    
+    .banner{
+        .banner-grid{
+            .grid-left{
+                .grid-item{
+                    h1 {
+                        font-size: $large-medium-sm-font;
+                        line-height: 50px;
+                    }
+                }
+            }
+        }
+    }
+
+    .hosting-main{
+        .hosting-head{
+            padding: 45px 35px;
+
+            h1 {
+                font-size: $extra-medium-font;
+                line-height: 38px;
+            }
+        }
+
+        .hosting-body{
+            .hosting-bd-box{
+                .host-bd-items {
+                    width: 230px;
+
+                    h2 {
+                        font-size: $normal-medium-font;
+                        line-height: 27px;
+                    }
+                }
+            }
+        }
+
+        .hosting-place-box{
+            div {
+                font-size: $medium-sm-font;
+                font-weight: 500;
+
+                i{
+                    font-size: $medium-font;
+                }
+
+                span{
+                    &::after {
+                        margin-top: -7px;
+                        height: 2px;
+                    }
+                }
+            }
+
+            p{
+                font-size: $small-font;
+            }
+
+            button{
+                font-size: $medium-small-font;
+            }
+        }
+    }
+
+    .hosting-art{
+        h1 {
+            font-size: $extra-normal-font;
+            line-height: 36px;
+        }
+
+            .art-grid{
+                a.art-gd-items{
+                    h2{
+                        font-size: $small-medium-font;
+                        line-height: 23px;
+                    }
+                }
+            }
+    }
+
+    .airbnb-hosting{
+        .airbnb-host-grid{
+            .grid-right{
+                .grid-item{
+                    h1 {
+                        font-size: $large-medium-sm-font;
+                        line-height: 48px;
+                    }
+                    p{
+                        font-size: $normal-small;
+                    }
+
+                    button{
+                        font-size: $normal-small;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    
+    .hosting-main{
+
+        .hosting-head{
+            h1 {
+                font-size: $medium-large-font;
+                line-height: 32px;
+            }
+        }
+
+        .hosting-place-box{
+            div {
+                font-size: $normal-medium-font;
+                margin-bottom: 15px;
+            }
+
+            p{
+                font-size: $medium-small-font;
+            }
+        }
+    }
+
+    .hosting-art{
+        h1 {
+            font-size: $medium-nm-font;
+            line-height: 30px;
+        }
+    }
+
+    .airbnb-hosting{
+        .airbnb-host-grid{
+            .grid-right{
+                .grid-item{
+                    p {
+                        font-size: $small-font;
+                    }
+
+                    button{
+                        font-size: $small-font;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    
+    .banner{
+        .banner-grid{
+            .grid-left{
+                padding: 40px 30px;
+
+                .grid-item{
+                    h1 {
+                    font-size: $large-small-font;
+                    line-height: 45px;
+                    }
+
+                    button{
+                        font-size: $small-font;
+                    }
+                }
+            }
+        }
+    }
+
+    .hosting-main{
+        .hosting-head{
+            h1 {
+                font-size: $medium-nm-font;
+                line-height: 30px;
+            }
+        }
+
+        .hosting-place-box{
+            div {
+                font-size: $medium-font;
+
+                span{
+                    &::after {
+                        margin-top: -5px;
+                    }
+                }
+            }
+        }
+    }
+
+    .hosting-art {
+        padding: 60px 45px 60px;
+    }
+
+    .airbnb-hosting{
+        .airbnb-host-grid{
+            .grid-right {
+                padding: 40px;
+            }
+        }
+    }
+}
